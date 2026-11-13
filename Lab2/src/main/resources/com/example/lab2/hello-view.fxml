@@ -7,18 +7,36 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="350.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab2.HelloController">
+<VBox alignment="CENTER"
+      prefHeight="350.0"
+      prefWidth="400.0"
+      spacing="20.0"
+      xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.lab2.HelloController">
 
     <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+        <Insets bottom="20.0"
+                left="20.0"
+                right="20.0"
+                top="20.0" />
     </padding>
 
-    <TextField fx:id="username" promptText="Username" />
+    <TextField fx:id="username"
+               promptText="Username" />
 
-    <Label fx:id="welcomeText" alignment="CENTER" style="-fx-text-fill: red;" />
+    <Label fx:id="welcomeText"
+           alignment="CENTER"
+           style="-fx-text-fill: red;" />
 
-    <PasswordField fx:id="password" promptText="Password" />
+    <PasswordField fx:id="password"
+                   promptText="Password" />
 
-    <Button onAction="#onHelloButtonClick" text="login" />
+    <Button fx:id="loginButton"
+            text="Login"
+            onAction="#onHelloButtonClick" />
+
+    <Button text="Stress Test"
+            onAction="#onStressTestClick" />
 
 </VBox>
